@@ -1,4 +1,5 @@
-# hyprland-dots
+<h1 align="center" hyprland-dots />
+
 my Hyprland &amp; Waybar dots
 
 <p align="center">
