@@ -1,11 +1,11 @@
 <p align="center">
-  <h1 hyprland-dots />
+  <h1> hyprland-dots </h1>
 </p>
 
 ##
 
 <p align="center">
-  <h3 my Hyprland &amp; Waybar dots />
+  <h3> my Hyprland &amp; Waybar dots </h3>
 </p>
 
 <p align="center">
