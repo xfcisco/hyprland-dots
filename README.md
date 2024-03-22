@@ -1,8 +1,12 @@
-<div>
-  <h1 align="center" hyprland-dots />
+<p align="center">
+  <h1 hyprland-dots />
+</p>
 
+##
+
+<p align="center">
   <h3 my Hyprland &amp; Waybar dots />
-</div>
+</p>
 
 <p align="center">
   <img src="https://github.com/xfcisco/hyprland-dots/blob/main/banner.png?raw=true" />
