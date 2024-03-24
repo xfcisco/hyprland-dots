@@ -5,28 +5,41 @@
   font-size: 13;
   font-weight: 100;
   min-width: 10px;
-  padding: 1px 1px 1px 1px
+  padding: 1px 0px 1px 0px;
+  margin: 0px 0px 3px 0px;
 }
 
 window#waybar {
   background-color: rgba(14, 17, 21, 1);
   color: #b3b7bd;
-  min-width: 5px;
+  min-width: 30px;
 }
 
-#custom-launcher {
-  background: linear-gradient(135deg, #53befc 10%, #9554ff 90%);
-  color: #0e1115;
-  margin: 2px 2px 4px 2px;
+#image-module {
+  background-color: #0e1115;
+/*  margin: 2px 2px 4px 2px;
   padding: 5px 0px 5px 0px;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: bold;
+  border-radius: 6px;*/
+/*  font-size: 14px; */
+/*  font-weight: bold; */
+}
+
+#image-player {
+  background-image: url("/home/xfc/Pictures/wv.png");
+
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+  background-position: center;
+  margin: 0px 3px 0px 3px;
+  padding: 6px 2.5px 6px 2.5px;
+  border-radius: 8px;
+  font-size: 5;
 }
 
 #workspaces {
   background-color: #171c21;
-  margin: 0px 2px 0px 2px;
+  margin: 0px 3px 0px 3px;
   padding: 6px 2.5px 6px 2.5px;
   border-radius: 9px;
 }
@@ -34,10 +47,10 @@ window#waybar {
 #workspaces button {
   background-color: #2d3139;
   color: #b3b7bd;
-  margin: 3px 2px 0px 2px;
-  padding: 0px 0px 0px 0px;
+  margin: 3px 2px 0px 3px;
+  padding: 1px 0px 1px 0px;
   border-radius: 8px;
-  font-size: 1px;
+  font-size: 0px;
 }
 
 #workspaces button.focused {
@@ -64,14 +77,14 @@ window#waybar {
   border-radius: 4px;
 }
 
-#pulseaudio {
+/*#pulseaudio {
   background: linear-gradient(135deg, #2798e4 5%, #53befc 80%);
   color: #0e1115;
   margin: 2px 2px 3 2px;
   padding: 2px 0px 5px 0px;
   border-radius: 6px;
   font-size: 13px;
-}
+}*/
 
 #backlight {
   background: linear-gradient(90deg, #ff8a30 0%, #FFC457 80%);
@@ -100,10 +113,10 @@ window#waybar {
   font-size: 20px;
 }
 
-#network {
+#pulseaudio {
   background: linear-gradient(135deg, #9554ff 0%, #B467F9 80%);
   color: #0e1115;
-  margin: 2px 2px 6 2px;
+  margin: 2px 2px 2px 2px;
   padding: 2px 0px 5px 0px;
   border-radius: 6px;
   font-size: 13px;

@@ -1,18 +1,18 @@
-{
+{ 
   "layer": "top",
   "position": "left",
   "exclusive": true,
   "width": 10,
   "modules-left": [
-    "custom/launcher",
-    "tray",
+    "image#module",
+    "image#player",
   ],
   "modules-center": [
     "hyprland/workspaces",
   ],
   "modules-right": [
+    "tray",
     "pulseaudio",
-    "network",
     "clock",
     "custom/power",
   ],
@@ -21,6 +21,9 @@
       "on-click": "~/.config/polybar.old/ws1.sh",
       "all-outputs": true,
       "enable-bar-scroll": true,
+      "smooth-scrolling-threshold": 1,
+      "on-scroll-up": "hyprctl dispatch workspace 1; playerctl pause",
+      "on-scroll-down": "hyprctl dispatch workspace 1; playerctl pause",
       "persistent-workspaces" :{
           "1": [],
 	 		    "2": [],
@@ -50,10 +53,15 @@
 "on-click-right": "$HOME/.config/hypr/scripts/apps/eww.sh open calbox --toggle",
 "interval": 1,
 },
-"custom/launcher": {
-"on-click": "eww-panel",
-"on-click-right": "$HOME/.config/hypr/scripts/apps/eww.sh open symphony --toggle",
-"format": " μ"
+"image#module": {
+  "path": "/home/xfc/.config/waybar/pic.png",
+  "size": 24,
+  "on-click": "eww-panel",
+},
+"image#player": {
+  "background": "/home/xfc/Pictures/wv.png",
+  "format": "Hello",
+  "size": 24,
 },
 "custom/power": {
 "on-click": "$HOME/.config/hypr/scripts/apps/eww.sh open powermenu --toggle",
@@ -69,8 +77,6 @@
 ],
 "on-click": "~/.config/polybar.old/ws1.sh",
 "on-click-middle": "$HOME/.config/rofi/applets/bin/brightness.sh",
-"on-scroll-up": "~/.config/polbar.old/ws1.sh",
-"on-scroll-down": "~/.config/polbar.old/ws1.sh",
 },
 "battery": {
 "states": {
@@ -112,7 +118,7 @@
   "car": "",
   "default": [
     "󰕿",
-    "󰖀",
+    "󰕾",
     "󰕾"
   ],
 },
